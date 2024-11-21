@@ -1,0 +1,40 @@
+<!ELEMENT factura (informacionFactura, cliente, empresa, productos, totales, comentarios)>
+
+<!-- Datos Factura  -->
+<!ELEMENT informacionFactura (fecha_factura, numero_factura, fechaVencimiento)>
+<!ELEMENT fecha_factura (#PCDATA)>
+<!ELEMENT numero_factura (#PCDATA)>
+<!ELEMENT fechaVencimiento (#PCDATA)>
+
+<!-- Datos Cliente -->
+<!ELEMENT cliente (nombre, direccion, NIF, ciudad, email)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT NIF (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!-- Datos Empresa -->
+<!ELEMENT empresa (nombre, direccion, CIF, ciudad, email)>
+<!ELEMENT CIF (#PCDATA)>
+
+<!-- Datos Productos -->
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (descripcion, unidades, precio_unitario, precioTotal)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT unidades (#PCDATA)>
+<!ELEMENT precio_unitario (#PCDATA)>
+<!ELEMENT precioTotal (#PCDATA)>
+
+<!-- Datos Precios -->
+<!ELEMENT totales (base_imponible, IVA, IRPF, total)>
+<!ELEMENT base_imponible (#PCDATA)>
+<!ELEMENT IVA (#PCDATA)>
+<!ELEMENT IRPF (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
+
+<!ELEMENT comentarios (#PCDATA)>
+
+<!ATTLIST factura id ID #REQUIRED>
+<!ATTLIST cliente email CDATA #IMPLIED>
+<!ATTLIST empresa email CDATA #IMPLIED>

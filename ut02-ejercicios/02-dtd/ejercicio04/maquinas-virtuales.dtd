@@ -1,0 +1,13 @@
+<!ELEMENT maquinas-virtuales (maquina+)>
+<!ELEMENT maquina (nombre, cpu, ram, disco, red)>
+<!ATTLIST maquina id ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cpu (#PCDATA)>
+<!ELEMENT ram (#PCDATA)>
+<!ELEMENT disco EMPTY>
+<!ATTLIST disco 
+    ruta CDATA #REQUIRED
+    tipo (vdi|vhd|vmdk) #REQUIRED
+    cantidad CDATA #REQUIRED
+    unidad (MB|GB|TB) #REQUIRED>
+<!ELEMENT red (#PCDATA)>

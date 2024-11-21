@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libreria>
+    <libro>
+        <titulo>XML para principiantes</titulo>
+        <autor>Juan Pérez</autor>
+        <anio>2022</anio>
+        <precio moneda="USD">25.00</precio>
+    </libro>
+    <libro>
+        <titulo>Guía avanzada de XML</titulo>
+        <autor>Ana García</autor>
+        <anio>2020</anio>
+        <precio moneda="EUR">30.00</precio>
+    </libro>
+    <libro>
+        <titulo>Introducción a XML</titulo>
+        <autor>Marta Fernández</autor>
+        <anio>2019</anio>
+        <precio moneda="USD">20.00</precio>
+    </libro>
+    <libro>
+        <titulo>Fundamentos de XML</titulo>
+        <autor>Carlos López</autor>
+        <anio>2021</anio>
+        <precio moneda="EUR">35.00</precio>
+    </libro>
+    <libro>
+        <titulo>XML en profundidad</titulo>
+        <autor>Luis Martínez</autor>
+        <anio>2018</anio>
+        <precio moneda="USD">40.00</precio>
+    </libro>
+</libreria>

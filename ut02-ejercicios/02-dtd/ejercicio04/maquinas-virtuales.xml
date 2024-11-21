@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mvs SYSTEM "maquinas-virtuales.dtd">
+<maquinas-virtuales>
+    <maquina id="342b4d03-e658-4c3d-95f5-5a38bb9ac48d">
+        <nombre>LND - Linux Mint 21.3</nombre>
+        <cpu>2</cpu>
+        <ram>4096</ram>
+        <disco ruta="D:\VMs\LND\LND-LinuxMint21.3\linuxmint21-disk001.vdi" tipo="vdi" cantidad="50" unidad="GB"></disco>
+        <red>Adaptador Puente</red>
+    </maquina>
+    <maquina id="78fa2b0b-d7bf-40c9-ac06-1a11cf0ec7b1">
+        <nombre>LND - Ubuntu 22.04</nombre>
+        <cpu>2</cpu>
+        <ram>6144</ram>
+        <disco ruta="D:\VMs\LND\LND-Ubuntu22.04\ubuntu22-disk001.vdi" tipo="vdi" cantidad="50" unidad="GB"></disco>
+        <red>Adaptador Puente</red>
+    </maquina>
+    <maquina id="96b220e4-4852-41b9-aa00-adfe4a65a30e">
+        <nombre>LND - Ubuntu Server 22.04</nombre>
+        <cpu>2</cpu>
+        <ram>4096</ram>
+        <disco ruta="D:\VMs\LND\LND-UbuntuServer22.4\ubuntuserver22-disk001.vdi" tipo="vdi" cantidad="25" unidad="GB"></disco>
+        <red>Adaptador Puente</red>
+    </maquina>
+</maquinas-virtuales>
